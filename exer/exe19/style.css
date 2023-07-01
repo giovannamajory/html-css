@@ -1,0 +1,18 @@
+@charset "UFT-8";
+
+body{
+    font: normal 1em arial, sans-serif; 
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: right;
+}
+
+p{
+text-align: justify;
+text-indent: 30px;
+}
