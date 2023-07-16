@@ -14,27 +14,14 @@
             width: 500px;
             border-collapse: collapse;
             font-weight: bold;
-            font-size: 17px
+            font-size: 17px;
+            position: relative;
         }
 
         td, th{
             border: 1px solid black;
             padding: 11px;
         }
-
-        thead, tfoot {
-            background-color: rgb(54, 54, 54);
-            color: white;
-        }
-
-        .num{
-            text-align: right;
-        }
-
-        .fot{
-            text-align: center;
-        }
-
 
         caption{
             font-size: 18px;
@@ -44,6 +31,42 @@
             color: white;
             text-align: center;
         }
+
+
+        thead, tfoot {
+            background-color: rgb(54, 54, 54);
+            color: white;
+        }
+
+        thead > tr > td {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(59, 59, 59);
+        }
+
+
+        .num{
+            text-align: right;
+        }
+
+        .fot{
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: darkgrey;
+
+
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+
+        }
+
+
+
+        
     </style>
 </head>
 <body>
@@ -61,8 +84,8 @@
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style=" width: 50px">População</th>
         </thead>
 
         <tbody>
@@ -92,7 +115,7 @@
 
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td class="num">11.377.299</td>
+                <td class="num">11.377.299</td> 
             </tr>
 
             <tr>
@@ -206,7 +229,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="fot"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
