@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cnome{
+            background-color: burlywood;
+        }
+
+        .csexo, .cidade{
+            background-color: brown;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Hermione</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Harry Potter</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Contador</td>
+        </tr>
+
+        <tr>
+            <td>Rony</td>
+            <td>M</td>
+            <td>24</td>
+            <td>Cozinheiro</td>
+        </tr>
+
+        <tr>
+            <td>Lilith</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Advogada</td>
+        </tr>
+
+        <tr>
+            <td>Frida</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Artista</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
